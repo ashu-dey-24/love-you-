@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lovely Background</title>
+<center><b>❤The meeting between you and me is a coincidence that creat by god❤</b></center>
+<style>
+  :root{
+    --bg1: #ff6b6b;
+    --bg2: #f8c27a;
+    --bg3: #7bdff6;
+    --bg4: #8e7dff;
+  }
+
+  html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+  .stage{
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
+    display:grid;
+    place-items:center;
+    color:white;
+    text-align:center;
+  }
+
+  /* animated gradient layer */
+  .gradient {
+    position:absolute;inset:0;
+    background: linear-gradient(120deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
+    background-size: 400% 400%;
+    animation: moveGradient 12s ease infinite;
+    filter: contrast(1.05) saturate(1.05);
+    z-index:0;
+  }
+  @keyframes moveGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+  /* soft grain overlay */
+  .grain {
+    position:absolute;inset:0;pointer-events:none;
+    background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 3px 3px;
+    opacity:0.25; z-index:3;
+  }
+
+  /* floating blobs */
+  .blob {
+    position:absolute;
+    width:40vmax;height:40vmax;
+    border-radius:50%;
+    filter:blur(80px) saturate(1.1);
+    opacity:0.55;
+    mix-blend-mode:screen;
+    z-index:1;
+    transform: translate3d(0,0,0);
+    animation: float 18s ease-in-out infinite;
+  }
+  .blob.b1{left:-10%;top:-20%; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.12), rgba(255,255,255,0) 40%), rgba(255,255,255,0.05);}
+  .blob.b2{right:-15%;bottom:-25%; background: radial-gradient(circle at 70% 70%, rgba(255,255,255,0.10), rgba(255,255,255,0) 40%), rgba(255,255,255,0.03); animation-duration:22s; animation-delay: -6s;}
+  .blob.b3{left:10%;bottom:-10%; width:30vmax;height:30vmax; background: radial-gradient(circle at 40% 60%, rgba(0,0,0,0.06), rgba(0,0,0,0) 40%), rgba(0,0,0,0.02); mix-blend-mode:multiply; opacity:0.25; animation-duration:26s; animation-delay: -3s;}
+
+  @keyframes float {
+    0%{transform: translateY(0) translateX(0) scale(1)}
+    25%{transform: translateY(-6vh) translateX(3vw) scale(1.03)}
+    50%{transform: translateY(0) translateX(0) scale(1)}
+    75%{transform: translateY(6vh) translateX(-3vw) scale(0.98)}
+    100%{transform: translateY(0) translateX(0) scale(1)}
+  }
+
+  /* content layer */
+  .content {
+    position:relative; z-index:4;
+    padding:2rem;
+    backdrop-filter: blur(6px) saturate(1.1);
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    max-width:840px;
+    margin:2rem;
+  }
+  h1{margin:.2rem 0;font-size:clamp(1.6rem,4vw,3rem);letter-spacing:-0.02em}
+  p{margin:.4rem 0 0 0;opacity:0.95}
+  .buttons{margin-top:1rem}
+  .btn{
+    display:inline-block;padding:.5rem .9rem;border-radius:10px;background:rgba(255,255,255,0.12);
+    color:white;text-decoration:none;font-weight:600;margin:0 .3rem;
+    transition:transform .18s ease, background .18s ease;
+  }
+  .btn:hover{transform:translateY(-3px); background:rgba(255,255,255,0.18)}
+  /* responsive */
+  @media (max-width:560px){ .content{margin:1rem;padding:1rem;border-radius:10px} }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="gradient" aria-hidden="true"></div>
+
+    <div class="blob b1" aria-hidden="true"></div>
+    <div class="blob b2" aria-hidden="true"></div>
+    <div class="blob b3" aria-hidden="true"></div>
+
+    <div class="content">
+      <h1><p><font color="black">My dear piya baby ❤,
+I hope you are well. I want to share some thoughts from deep within my heart that I might not always express verbally. I'm more myself when I'm with you. You came into my life like a blessing and made everything beautiful.
+Loving you was never an option for me, it was a necessity, I need you like a heartbeat. Your smile, the way you talk, everything about you captivates me. Thank you for always being my rainbow after the storm.
+In all the world, there is no love for you like mine. I don't want any grand gifts from you, just be mine, I just want you. I want to be by your side forever, sharing in all your joys and sorrows. I don't want anyone else in your role in my story.
+I don't know how you'll feel after reading this letter, but these are my genuine feelings. Words cannot express how much you mean to me.
+With love,
+Your sweetheart ❤</f></p>
+</h1>
+      <p>I AM REALLY LOVE YOU PIYA SONA ❤.</p>
+      <div class="buttons">
+        <a class="btn" href="#" onclick="document.documentElement.style.setProperty('--bg1','#ff6b6b');document.documentElement.style.setProperty('--bg2','#f8c27a');document.documentElement.style.setProperty('--bg3','#7bdff6');document.documentElement.style.setProperty('--bg4','#8e7dff');return false;">Red theme </a>
+        <a class="btn" href="#" onclick="document.documentElement.style.setProperty('--bg1','#334d50');document.documentElement.style.setProperty('--bg2','#cbcaa5');document.documentElement.style.setProperty('--bg3','#e0eafc');document.documentElement.style.setProperty('--bg4','#5f2c82');return false;">Blue theme</a>
+      </div>
+    </div>
+
+    <div class="grain" aria-hidden="true"></div>
+  </div>
+</body>
+</html>
